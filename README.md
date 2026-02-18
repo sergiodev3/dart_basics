@@ -233,6 +233,7 @@ cd /ruta/al/proyecto/dart
 
 ## 👨‍🏫 Autor y Contacto
 
+Prof. Sergio Homero Sanchez Castillo
 **CBTIS #258**  
 Sexto Semestre - Programación en Dart
 
