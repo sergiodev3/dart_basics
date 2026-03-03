@@ -6,9 +6,9 @@
 void main() {
   print('=== BUCLE FOR ===\n');
 
-  // Ejemplo básico: contar del 1 al 5
+  // Ejemplo básico: contar del 1 al 10
   print('--- Contar del 1 al 5 ---');
-  for (var i = 1; i <= 5; i++) {
+  for (var i = 1; i <= 10; i++) {
     print('Número: $i');
   }
 
@@ -29,7 +29,7 @@ void main() {
 
   // Ejemplo: iterar sobre una lista
   print('\n--- Iterar sobre una lista ---');
-  var lenguajes = ['Dart', 'Python', 'JavaScript', 'Java', 'C++'];
+  var lenguajes = ['Dart', 'Python', 'JavaScript', 'Go', 'C++'];
   for (var i = 0; i < lenguajes.length; i++) {
     print('${i + 1}. ${lenguajes[i]}');
   }

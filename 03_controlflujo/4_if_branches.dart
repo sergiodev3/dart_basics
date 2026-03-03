@@ -8,8 +8,8 @@ void main() {
 
   // Ejemplo 1: Verificar mayoría de edad
   print('--- Verificación de edad ---');
-  var edad = 20;
 
+  var edad = 20;
   if (edad >= 18) {
     print('Edad: $edad años');
     print('✓ Eres mayor de edad');
@@ -20,7 +20,7 @@ void main() {
 
   // Ejemplo 2: Múltiples condiciones con else if
   print('\n--- Sistema de calificaciones ---');
-  var calificacion = 85;
+  var calificacion = 98;
 
   print('Calificación: $calificacion');
   if (calificacion >= 90) {
@@ -36,14 +36,26 @@ void main() {
   }
 
   // Ejemplo 3: Clima y recomendaciones
+  /// Muestra recomendaciones según el tipo de clima
+  void mostrarRecomendacionesClima(String clima) {
+    print('\nClima: $clima');
+    if (clima == 'lluvia') {
+      print('☂️ Deberías llevar un impermeable porque está lloviendo.');
+    } else if (clima == 'nieve') {
+      print('🧥 Deberías llevar una chaqueta porque está nevando.');
+    } else {
+      print('☀️ ¡Disfruta del buen clima!');
+    }
+  }
+
   print('\n--- Recomendaciones según el clima ---');
   mostrarRecomendacionesClima('lluvia');
   mostrarRecomendacionesClima('nieve');
   mostrarRecomendacionesClima('sol');
 
   // Ejemplo 4: Operador ternario (forma corta de if-else)
-  print('\n--- Operador ternario ---');
-  var temperatura = 25;
+  print('\n--- Operador ternario ? ---');
+  var temperatura = 2;
   String clima = temperatura > 20 ? 'Cálido' : 'Frío';
   print('Temperatura: $temperatura°C - Clima: $clima');
 
@@ -52,18 +64,6 @@ void main() {
   verificarAcceso(true, 21, 18); // Caso: acceso permitido
   verificarAcceso(false, 21, 18); // Caso: sin credencial
   verificarAcceso(true, 16, 18); // Caso: menor de edad
-}
-
-/// Muestra recomendaciones según el tipo de clima
-void mostrarRecomendacionesClima(String clima) {
-  print('\nClima: $clima');
-  if (clima == 'lluvia') {
-    print('☂️ Deberías llevar un impermeable porque está lloviendo.');
-  } else if (clima == 'nieve') {
-    print('🧥 Deberías llevar una chaqueta porque está nevando.');
-  } else {
-    print('☀️ ¡Disfruta del buen clima!');
-  }
 }
 
 /// Verifica el acceso basado en credencial y edad
@@ -83,16 +83,4 @@ void verificarAcceso(bool tieneCredencial, int edadUsuario, int edadMinima) {
       print('    Motivo: Edad insuficiente (mínimo: $edadMinima)');
     }
   }
-}
-
-void traerImpermeable() {
-  print('☂️ Deberías llevar un impermeable porque está lloviendo.');
-}
-
-void usarChaqueta() {
-  print('🧥 Deberías llevar una chaqueta porque está nevando.');
-}
-
-void disfrutarDelSol() {
-  print('☀️ ¡Disfruta del buen clima!');
 }

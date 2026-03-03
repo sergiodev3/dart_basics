@@ -50,8 +50,8 @@ void main() {
 
   // Ejemplo: niveles de acceso
   print('\n--- Niveles de acceso ---');
-  var rol = 'ADMIN';
 
+  var rol = 'ADMIN';
   print('Rol: $rol');
   switch (rol) {
     case 'ADMIN':

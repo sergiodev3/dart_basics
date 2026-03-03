@@ -9,7 +9,7 @@ void main() {
   // Ejemplo 1: Verificar edad (error)
   print('--- Caso 1: Edad insuficiente ---');
   try {
-    verificarEdad(16);
+    verificarEdad(13);
   } catch (e) {
     print('❌ Error capturado: $e');
   } finally {
